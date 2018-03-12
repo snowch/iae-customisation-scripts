@@ -18,11 +18,11 @@ set -e # Make script fail if an error is encountered
 #     }]
 # }
 
-export S3_ACCESS_KEY=$1
-export S3_ENDPOINT=$2
-export S3_SECRET_KEY=$3
+S3_ACCESS_KEY=$1
+S3_ENDPOINT=$2
+S3_SECRET_KEY=$3
 
-export AMBARI_RESTART_TYPE=$4
+AMBARI_RESTART_TYPE=$4
 
 ################################################################################
 #
