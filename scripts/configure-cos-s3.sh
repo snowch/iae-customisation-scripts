@@ -11,7 +11,7 @@ set -e # Make script fail if an error is encountered
 
 
 if [ "$#" -ne 3 ]; then
-    echo "ERROR: Expected three program argumens (S3_ACCESS_KEY, S3_ENDPOINT, S3_SECRET_KEY)"
+    echo "ERROR: Expected three program argumens: S3_ACCESS_KEY, S3_ENDPOINT, S3_SECRET_KEY"
     exit 1
 fi
 
