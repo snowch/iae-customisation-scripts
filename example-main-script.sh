@@ -8,7 +8,7 @@ set -e # Make script fail if an error is encountered
 #
 ################################################################################
 
-# Retrieve customisation script parameters, for example:
+# Retrieve customisation script parameters, for example, if you have:
 # {
 #     "target": "all",
 #     "custom_actions": [{
