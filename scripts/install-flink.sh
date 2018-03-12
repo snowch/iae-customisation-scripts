@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # INTRODUCTION: Install Flink.  
+# PARAMETERS: None - this script does not require any parameters
 # WARNING: Flink does not seem to work well with S3: https://issues.apache.org/jira/browse/FLINK-8543
 
 # abort on error
