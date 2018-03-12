@@ -2,11 +2,10 @@ set -e # Make script fail if an error is encountered
 
 # INTRODUCTION: This script is configures Analytics Engine with a 
 #
-# VARIABLES: This script requires the following arguments
-# 
-#    S3_ACCESS_KEY
-#    S3_ENDPOINT
-#    S3_SECRET_KEY
+# SCRIPT ARGUMENTS: This script requires one argument that must be set to 'HARD_AMBARI_RESTART'
+#
+# TODO: Future versions of this script will support different methods of restarting Ambari, e.g. 
+#       https://stackoverflow.com/questions/48938878/how-to-determine-which-services-to-restart-after-a-configuration-change
 
 
 if [ "$#" -ne 1 ]; 
