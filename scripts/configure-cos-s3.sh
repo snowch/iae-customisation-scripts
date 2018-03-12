@@ -1,12 +1,13 @@
 set -e # Make script fail if an error is encountered
 
-# INTRODUCTION: This script is configures Analytics Engine with a 
+# INTRODUCTION: 
 #
-# VARIABLES: This script requires the following arguments
-# 
+# - This script is configures Analytics Engine with COS S3 details.
+# - This script requires the following arguments 
 #    S3_ACCESS_KEY
 #    S3_ENDPOINT
 #    S3_SECRET_KEY
+# - Ambari will rerequire restarting after running this script.
 
 
 if [ "$#" -ne 3 ]; then
