@@ -6,6 +6,8 @@
 #    S3_ENDPOINT
 #    S3_SECRET_KEY
 
+set -e # Make script fail if an error is encountered
+
 if [ ! -z $S3_ACCESS_KEY ]
 then
     echo "ERROR: Mandatory environment variable S3_ACCESS_KEY was not found.  Exiting."
