@@ -37,7 +37,7 @@ BASEURL=https://github.com/snowch/iae-customisation-scripts/raw/master/scripts
 #
 
 wget -c $BASEURL/configure-cos-s3.sh
-source configure-cos-s3.sh $S3_ACCESS_KEY $S3_ENDPOINT $S3_SECRET_KEY=$3
+source configure-cos-s3.sh $S3_ACCESS_KEY $S3_ENDPOINT $S3_SECRET_KEY
 
 #
 # Perform ambari restart
