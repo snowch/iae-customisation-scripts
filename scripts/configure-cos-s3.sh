@@ -1,31 +1,22 @@
+set -e # Make script fail if an error is encountered
+
 # INTRODUCTION: This script is configures Analytics Engine with a 
 #
-# VARIABLES: This script requires the following environment variables to be set:
+# VARIABLES: This script requires the following arguments
 # 
 #    S3_ACCESS_KEY
 #    S3_ENDPOINT
 #    S3_SECRET_KEY
 
-set -e # Make script fail if an error is encountered
 
-if [ ! -z $S3_ACCESS_KEY ]
-then
-    echo "ERROR: Mandatory environment variable S3_ACCESS_KEY was not found.  Exiting."
+if [ "$#" -ne 3 ]; then
+    echo "ERROR: Expected three program argumens (S3_ACCESS_KEY, S3_ENDPOINT, S3_SECRET_KEY)"
     exit 1
 fi
 
-if [ ! -z $S3_ENDPOINT ]
-then
-    echo "ERROR: Mandatory environment variable S3_ENDPOINT was not found.  Exiting."
-    exit 1
-fi
-
-if [ ! -z $S3_SECRET_KEY ]
-then
-    echo "ERROR: Mandatory environment variable S3_SECRET_KEY was not found.  Exiting."
-    exit 1
-fi
-    
+S3_ACCESS_KEY=$1
+S3_ENDPOINT=$2
+S3_SECRET_KEY=$3    
 
 if [ "x$NODE_TYPE" == "xmanagement-slave2" ]
 then
