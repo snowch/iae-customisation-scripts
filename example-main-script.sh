@@ -40,6 +40,13 @@ wget -c $BASEURL/configure-cos-s3.sh
 source configure-cos-s3.sh $S3_ACCESS_KEY $S3_ENDPOINT $S3_SECRET_KEY
 
 #
+# Install Apache Flink
+#
+
+wget -c $BASEURL/install-flink.sh
+source install-flink.sh
+
+#
 # Perform ambari restart
 #
 
