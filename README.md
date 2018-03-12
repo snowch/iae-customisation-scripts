@@ -6,4 +6,6 @@ The customisation scripts are located in the folder [./scripts](./scripts).  The
 
 Users will however need to create one script, see [./example-main-script.sh](./example-main-script.sh) for an example.
 
+WARNING: These scripts have not been tested.  They are just prototypes.
+
 
