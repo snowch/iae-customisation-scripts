@@ -26,7 +26,7 @@ AMBARI_RESTART_TYPE=$4
 
 ################################################################################
 #
-# Download and execute scripts
+# Download and execute scripts.  Modify these to suit your workflow.
 #
 ################################################################################
 
